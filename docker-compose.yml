@@ -1,13 +1,14 @@
-test_srv:
+git-nginx:
   image: emarcs/nginx-git
+  container_name: git-nginx
   ports:
     - 80:80
   volumes:
-    - /opt/docker/docker-nginx-git/srv/git:/srv/git
-    - /opt/docker/docker-nginx-git/logs:/var/log/nginx
+    - $PWD/repositories:/srv/git
+    - $PWD/nginx/logs:/var/log/nginx
     # add your custom username and password (default is admin, admin)
-    - ./htpasswd:/srv/htpasswd
+    - $PWD/credentials/htpasswd:/srv/htpasswd
     # if you want to use a custom configuration
-    - ./default.conf:/etc/nginx/conf.d/default.conf
+    - $PWD/nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
   environment:
     GIT_POSTBUFFER: 1048576
