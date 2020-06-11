@@ -1,10 +1,10 @@
 test_srv:
   image: emarcs/nginx-git
   ports:
-    - 8180:80
+    - 80:80
   volumes:
-    - /srv/git:/srv/git
-    - logs:/var/log/nginx
+    - /opt/docker/docker-nginx-git/srv/git:/srv/git
+    - /opt/docker/docker-nginx-git/logs:/var/log/nginx
     # add your custom username and password (default is admin, admin)
     - ./htpasswd:/srv/htpasswd
     # if you want to use a custom configuration
