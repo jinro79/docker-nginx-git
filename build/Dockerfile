@@ -1,10 +1,10 @@
-FROM phusion/baseimage:0.11
+FROM phusion/baseimage:18.04-1.0.0-amd64
 
-MAINTAINER Marco Pompili "docker@mg.odd.red"
+MAINTAINER Luke "jinro79@gmail.com"
 
 RUN apt-get -q -q update && \
-    apt-get -y install gettext-base nginx fcgiwrap git
-
+    apt-get -y install gettext-base nginx fcgiwrap git 
+    
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN useradd nginx
