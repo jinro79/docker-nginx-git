@@ -5,7 +5,7 @@ nginx-git:
   ports:
     - 80:80
   volumes:
-    - $PWD/repositories:/srv/git
+    - /srv/git:/srv/git
     - $PWD/nginx/logs:/var/log/nginx
     # add your custom username and password (default is admin, admin)
     - $PWD/nginx/conf.d/htpasswd:/etc/nginx/conf.d/htpasswd

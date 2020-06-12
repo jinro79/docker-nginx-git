@@ -44,3 +44,7 @@
 2020/06/12 10:15:31 [error] 25#25: *3 user "admin": password mismatch, client: 192.168.1.45, server: localhost, request: "GET /stuff.git/info/refs?service=git-receive-pack HTTP/1.1", host: "192.168.1.74"
 2020/06/12 10:17:13 [error] 25#25: *6 user "admin": password mismatch, client: 192.168.1.45, server: localhost, request: "GET /srv/git/stuff.git/info/refs?service=git-upload-pack HTTP/1.1", host: "192.168.1.74"
 2020/06/12 10:17:29 [error] 25#25: *8 user "admin": password mismatch, client: 192.168.1.45, server: localhost, request: "GET /stuff.git/info/refs?service=git-upload-pack HTTP/1.1", host: "192.168.1.74"
+2020/06/12 10:37:22 [error] 25#25: *17 user "admin": password mismatch, client: 192.168.1.45, server: localhost, request: "GET /stuff.git/info/refs?service=git-upload-pack HTTP/1.1", host: "192.168.1.74"
+2020/06/12 10:37:33 [error] 25#25: *19 user "admin": password mismatch, client: 192.168.1.45, server: localhost, request: "GET /stuff.git/info/refs?service=git-upload-pack HTTP/1.1", host: "192.168.1.74"
+2020/06/12 10:39:27 [error] 25#25: *22 user "admin": password mismatch, client: 192.168.1.45, server: localhost, request: "GET /stuff.git/info/refs?service=git-upload-pack HTTP/1.1", host: "192.168.1.74"
+2020/06/12 10:39:42 [error] 25#25: *24 user "admin": password mismatch, client: 192.168.1.45, server: localhost, request: "GET /srv/git/stuff.git/info/refs?service=git-upload-pack HTTP/1.1", host: "192.168.1.74"
